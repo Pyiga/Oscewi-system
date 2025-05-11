@@ -118,7 +118,7 @@ export function DataTable<TData, TValue>({
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full px-2 py-2 bg-white dark:bg-black text-black dark:text-white rounded-lg shadow-md border border-[#008080]/20">
       <div className="flex flex-col sm:flex-row items-center py-4 gap-2">
         <Input
           placeholder="Filter by name, number, address, gender..."
@@ -196,7 +196,7 @@ export function DataTable<TData, TValue>({
       </div>
 
       <div className="rounded-md border border-[#008080]/20 overflow-x-auto">
-        <Table>
+        <Table className="bg-white dark:bg-black text-black dark:text-white">
           <TableHeader className="bg-[#008080]/5">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
@@ -213,7 +213,7 @@ export function DataTable<TData, TValue>({
               </TableRow>
             ))}
           </TableHeader>
-          <TableBody>
+          <TableBody className="bg-white dark:bg-black text-blaclk dark:text-white">
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow

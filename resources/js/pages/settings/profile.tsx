@@ -42,10 +42,10 @@ export default function Profile({ mustVerifyEmail, status }: { mustVerifyEmail: 
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title="Profile settings" />
+            <Head  title="Profile settings " />
 
             <SettingsLayout>
-                <div className="space-y-6">
+                <div className="space-y-6 text-[#008080] rounded-lg bg-white/50 backdrop-blur-sm dark:bg-black/50 dark:backdrop-blur-2xl lg:shadow-lg lg:shadow-[#008080]/20 p-6">
                     <HeadingSmall title="Profile information" description="Update your name and email address" />
 
                     <form onSubmit={submit} className="space-y-6">

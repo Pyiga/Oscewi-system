@@ -49,9 +49,9 @@ export function AppSidebar() {
         <Sidebar 
             collapsible="icon" 
             variant="inset"
-            className="bg-gradient-to-b from-[#008080]/5 to-[#008080]/10 border-r border-[#008080]/20 rounded-none lg:rounded-lg lg:border lg:bg-white/50 backdrop-blur-sm lg:backdrop-blur-2xl lg:shadow-lg lg:shadow-[#008080]/20"
+            className="bg-gradient-to-b from-[#008080]/5 to-[#008080]/10 border-r border-[#008080]/20 rounded-none lg:rounded-lg lg:border lg:bg-white/50 backdrop-blur-sm lg:backdrop-blur-2xl lg:shadow-lg lg:shadow-[#008080]/20 dark:bg-black/50 dark:border-[#008080]/20 dark:shadow-none lg:dark:bg-black/50 lg:dark:backdrop-blur-2xl lg:dark:shadow-lg lg:dark:shadow-[#008080]/20"
         >
-            <SidebarHeader className="border-b border-[#008080]/20 bg-white/50 backdrop-blur-sm">
+            <SidebarHeader className="border-b border-[#008080]/20 bg-white/50 backdrop-blur-sm dark:bg-black/50">
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton 
@@ -76,7 +76,7 @@ export function AppSidebar() {
                 </div>
             </SidebarContent>
 
-            <SidebarFooter className="border-t border-[#008080]/20 bg-white/50 backdrop-blur-sm">
+            <SidebarFooter className="border-t border-[#008080]/20 bg-white/50 backdrop-blur-sm dark:bg-black/50">
                 <div className="px-6 py-4">
                    
                 <SidebarGroupLabel className='text-sm font-medium text-[#008080] uppercase tracking-wider'>OSCEWI</SidebarGroupLabel>

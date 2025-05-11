@@ -53,8 +53,8 @@ export default function Password() {
             <Head title="Profile settings" />
 
             <SettingsLayout>
-                <div className="space-y-6">
-                    <HeadingSmall title="Update password" description="Ensure your account is using a long, random password to stay secure" />
+                <div className="space-y-6 text-[#008080] rounded-lg bg-white/50 backdrop-blur-sm dark:bg-black/50 dark:backdrop-blur-2xl lg:shadow-lg lg:shadow-[#008080]/20 p-6">
+                    <HeadingSmall  title="Update password" description="Ensure your account is using a long, random password to stay secure" />
 
                     <form onSubmit={updatePassword} className="space-y-6">
                         <div className="grid gap-2">
@@ -107,8 +107,8 @@ export default function Password() {
                             <InputError message={errors.password_confirmation} />
                         </div>
 
-                        <div className="flex items-center gap-4">
-                            <Button disabled={processing}>Save password</Button>
+                        <div className="flex items-center gap-4 bg-[#008080]/10 p-4 rounded-lg">
+                            <Button disabled={processing} className='text-white bg-[#008080] hover:bg-[#008080]/80 transition-colors duration-200'>Save password</Button>
 
                             <Transition
                                 show={recentlySuccessful}
